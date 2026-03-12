@@ -8,6 +8,7 @@ void funcao_constante(int indice, int array[]) {
 }
 
 int main(){
+    clock_t t;
     int pequeno[] = {10,20,30, 40, 50};
     int grande[1000000];
     for(int i=0;i<=10000; i++)
@@ -15,8 +16,14 @@ int main(){
 
     printf("\n -------TESTING O(1)-------\n");
 
+    t = clock();
     funcao_constante(2, pequeno);
+    t = clock() - t;
 
+    printf("Clock pequeno: %ld\n", t);
+    t = clock();
     funcao_constante(5500, grande);
+    t = clock() - t;
+    printf("Clock grande: %ld\n", t);
     return 0;
 }
