@@ -18,6 +18,15 @@ hello
 hello_debug
 *_debug
 
+# C++ executables without extension (Linux/Unix)
+**/Code/*
+!**/Code/*.cpp
+!**/Code/*.c
+!**/Code/*.h
+!**/Code/*.hpp
+!**/Code/*.md
+!**/Code/*.txt
+
 # Preprocessing files
 *.i
 *.s
@@ -59,6 +68,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+*.txt
 
 # Visual Studio files
 .vs/
