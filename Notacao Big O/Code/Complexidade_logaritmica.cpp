@@ -60,6 +60,9 @@ int main(){
     t = clock() - t;
 
     printf("Clock pequeno: %ld\n", t);
+    
+    printf("-----------------------------\n");
+    
     t = clock();
     buscaBinaria(grande, min, max, target);
     t = clock() - t;
